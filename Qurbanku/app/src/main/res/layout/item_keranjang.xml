@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardElevation="4dp"
+    android:id="@+id/item"
+    android:background="@drawable/borders"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <ImageView
+                android:id="@+id/ivToko"
+                android:layout_width="92dp"
+                android:layout_height="77dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kambing"
+                android:layout_weight="1"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/tvJudulhistori"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Kambing Putih"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Rp. 2.300.000,00"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/btnHapus"
+                android:layout_weight="1"
+                android:background="#FF0000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="hapus"
+                android:textColor="@color/white"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

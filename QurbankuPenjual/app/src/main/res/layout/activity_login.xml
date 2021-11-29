@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/login_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center"
+    tools:context=".Login"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_marginTop="-3dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="Sudah \n Punya\n Akun?"
+                    android:textSize="25sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_register_hero" />
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:inputType="textEmailAddress"
+                    android:background="@color/cardview_light_background"
+                    android:hint="Email" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/cardview_light_background"
+                    android:hint="Password"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                android:id="@+id/cirloginbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background_blue"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="Login"
+                app:initialCornerAngle="27dp"
+                app:spinning_bar_color="#FFF"
+                app:spinning_bar_padding="6dp"
+                app:spinning_bar_width="4dp" />
+
+            <TextView
+                android:id="@+id/tvkedaftar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="User Baru? Daftar Sekarang"
+                android:textAlignment="center"
+                android:textColor="@color/themeColor"
+                android:textSize="17sp"
+                android:textStyle="bold"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

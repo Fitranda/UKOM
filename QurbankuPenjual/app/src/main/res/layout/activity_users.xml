@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Users"
+    android:layout_gravity="center"
+    android:background="@color/register_bk_color"
+    android:focusableInTouchMode="true"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/gambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:src="@drawable/user" />
+
+            </RelativeLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNama"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/primaryTextColor"
+                            android:hint="Nama"
+                            android:inputType="textPersonName"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/primaryTextColor"
+                            android:hint="Email"
+                            android:inputType="textEmailAddress"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/primaryTextColor"
+                            android:hint="Password"
+                            android:inputType="textPassword"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etTelp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/primaryTextColor"
+                            android:hint="No Telephone"
+                            android:inputType="phone"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etAlamat"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/primaryTextColor"
+                            android:hint="Alamat Lengkap"
+                            android:inputType="textLongMessage"
+                            android:maxLines="3" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/links"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/link"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="12sp"
+                            android:backgroundTint="@color/primaryTextColor"
+                            android:hint="Link google maps"
+                            android:inputType="textUri"
+                            android:maxLines="1" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+                        android:id="@+id/btSimpan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_background_blue"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:text="Simpan"
+                        app:initialCornerAngle="27dp"
+                        app:spinning_bar_color="#FFF"
+                        app:spinning_bar_padding="6dp"
+                        app:spinning_bar_width="4dp" />
+
+                    <TextView
+                        android:id="@+id/tvkelogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text=""
+                        android:textAlignment="center"
+                        android:textColor="@color/themeColor"
+                        android:textSize="17sp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:background="@drawable/borders"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/harmin"
+                style="@style/modifiedEditText"
+                android:hint="Harga Minimal"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/harmax"
+                style="@style/modifiedEditText"
+                android:hint="Harga Maximal"
+                android:inputType="numberDecimal"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/prov"
+                style="@style/modifiedEditText"
+                android:hint="Nama Provinsi"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Kota"
+                style="@style/modifiedEditText"
+                android:hint="Nama Kota"
+                android:inputType="text"
+                android:maxLines="1" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:id="@+id/btnCari"
+            style="@style/loginButton"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/loginViewsMargin"
+            android:text="Cari"
+            app:initialCornerAngle="27dp"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="6dp"
+            app:spinning_bar_width="4dp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

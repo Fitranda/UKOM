@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Filter" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hMinim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Minimal"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/hMax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga Maksimal"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/kota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Kota"
+            android:inputType="text"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+        android:id="@+id/btnFilter"
+        style="@style/loginButton"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/loginViewsMargin"
+        android:text="Cari"
+        app:initialCornerAngle="27dp"
+        app:spinning_bar_color="#FFF"
+        app:spinning_bar_padding="6dp"
+        app:spinning_bar_width="4dp" />
+</LinearLayout>

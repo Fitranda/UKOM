@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardElevation="4dp"
+    android:id="@+id/item"
+    android:layout_marginBottom="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivToko"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:src="@drawable/kambing" />
+
+        <TextView
+            android:id="@+id/tvJudulhistori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Kambing Putih"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHarga"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_marginTop="5dp"
+            android:text="Rp. 2.300.000,00"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red"
+            android:text="Hapus"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

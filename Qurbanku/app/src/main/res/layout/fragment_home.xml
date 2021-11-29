@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/header"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/register_bk_color"
+        android:padding="10dp">
+
+        <br.com.simplepass.loading_button_lib.customViews.CircularProgressButton
+            android:gravity="left|center_vertical"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:text="Cari......"
+            android:onClick="Caris"
+            app:initialCornerAngle="27dp"
+            app:spinning_bar_color="#FFF"
+            app:spinning_bar_padding="6dp"
+            app:spinning_bar_width="4dp"
+            />
+
+        <RelativeLayout
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:onClick="keranjang"
+            android:src="@drawable/ic_cart" />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/borders"
+                android:orientation="vertical"
+                android:padding="10dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Toko"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/listToko"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#55efc4"
+                app:cardCornerRadius="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.66" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.33" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnSapi"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/bluee"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline4"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Sapi"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view31"
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:background="#BDBDBD"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnKambing"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/teal_200"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintStart_toEndOf="@+id/btnSapi"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Kambing"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"
+                            android:background="#BDBDBD"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/btnUnta"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:background="#0984e3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/guideline3"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/textView62"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="Unta"
+                            android:textColor="#fff"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/listHewan"
+                    android:layout_marginBottom="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+</FrameLayout>

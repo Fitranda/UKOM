@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable-v24/my_rounded.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/borders.xml" value="0.2431640625" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/btnkr.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/button_background_blue.xml" value="0.19282051282051282" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/cart.xml" value="0.19583333333333333" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/header.xml" value="0.19583333333333333" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.19583333333333333" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/ic_jam.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/ic_pesan.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/drawable/item_list_histori.xml" value="0.19583333333333333" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_bantuan.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_bottommain.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_cari.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_detail_item.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_detail_item_histori.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_detail_pesanan.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_detail_toko.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_favorit.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_forget_password.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_histori_pembelian.xml" value="0.14666666666666667" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_history.xml" value="0.1796875" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_keranjang.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_pencarian.xml" value="0.17314814814814813" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_pesanan.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/activity_user_pelanggan.xml" value="0.16666666666666666" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/diagram_filter_cari.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/filter.xml" value="0.14444444444444443" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/fix_alamat.xml" value="0.13796296296296295" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/fragment_dashboard.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_card_hewan.xml" value="0.30368098159509205" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_card_toko.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_detail_pesanan.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_histori.xml" value="0.4466666666666667" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_keranjang.xml" value="0.33715596330275227" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_komen.xml" value="0.3333333333333333" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_notif.xml" value="0.5" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_pesan.xml" value="0.22" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/layout/item_pil.xml" value="0.17314814814814813" />
+        <entry key="..\:/Android Studio/Qurbanku/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

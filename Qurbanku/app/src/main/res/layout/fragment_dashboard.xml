@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/header">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/users"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp">
+
+                    <ImageView
+                        android:id="@+id/imageView4"
+                        android:layout_width="75dp"
+                        android:layout_height="87dp"
+
+                        android:layout_marginEnd="24dp"
+                        android:src="@drawable/user"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvNamaUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="12dp"
+                        android:text="Fitranda Ramadhana"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvEmailUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="5dp"
+                        android:text="email@gmail.com"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNamaUser" />
+
+                    <TextView
+                        android:id="@+id/tvHPUser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="44dp"
+                        android:layout_marginTop="5dp"
+                        android:text="0893885791220485"
+                        android:textColor="@color/colorPrimary"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvEmailUser" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                app:cardBackgroundColor="@color/whiteTextColor"
+                app:cardCornerRadius="10dp">
+
+
+                <Button
+                    android:id="@+id/btHistori"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@drawable/my_rounded"
+                    android:drawableStart="@drawable/ic_jam"
+                    android:onClick="historipembelian"
+                    android:text="Histori Pembelian"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btPesanan"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/my_rounded"
+                    android:drawableStart="@drawable/ic_pesan"
+                    android:onClick="pesanan"
+                    android:text="Pesanan"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btfavorit"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/my_rounded"
+                    android:drawableStart="@drawable/ic_jam"
+                    android:onClick="favorit"
+                    android:text="Favorit"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btBantuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/my_rounded"
+                    android:drawableStart="@drawable/ic_bantuan"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:onClick="bantuan"
+                    android:text="Bantuan"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btKeluar"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/my_rounded"
+                    android:drawableStart="@drawable/ic_jam"
+                    android:text="Keluar"
+                    android:textAllCaps="false"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
